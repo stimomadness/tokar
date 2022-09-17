@@ -1,0 +1,54 @@
+$accent: #CB8734;
+$default: #2B2A28;
+$link: #fff;
+$bg: #FFFBF7;
+
+
+%gilroy-300 {
+  font-family: 'Gilroy-Light';
+  font-weight: 300;
+}
+%gilroy-400{
+  font-family: 'Gilroy-Regular';
+  font-weight: 400;
+}
+%gilroy-500 {
+  font-family: 'Gilroy-Medium';
+  font-weight: 500;
+}
+%gilroy-600 {
+  font-family: 'Gilroy-Semibold';
+  font-weight: 600;
+}
+%gilroy-700 {
+  font-family: 'Gilroy-Bold';
+  font-weight: 700;
+}
+%gilroy-800 {
+  font-family: 'Gilroy-Extrabold';
+  font-weight: 800;
+}
+
+
+%checkbox-hidden,
+%radio-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+%btn{
+  box-shadow: 0px 4px 4px rgba(203, 135, 52, 0.2);
+  border-radius: 4px;
+  border: none;
+  background: linear-gradient(180deg, #F39C32 0%, #CB8734 100%);
+}
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function mix($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
