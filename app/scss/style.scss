@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 
@@ -80,7 +81,6 @@
     font-size: 13px;
     line-height: 16px;
     margin-bottom: 5px;
-    cursor: pointer;
   }
 
   &__subtitle {
@@ -874,6 +874,66 @@
     line-height: 22px;
     opacity: 0.7;
     @extend %gilroy-300;
+  }
+}
+
+
+
+.structure {
+  background: #FFFBF7;
+  &__inner{
+    padding: 145px 0;
+
+  }
+  &__title {
+    margin-bottom: 40px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
+    border-radius: 0px 40px 0px 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img {
+    border-radius: 0px 36px;
+    margin: 5px;
+  }
+
+  &__list-min {
+    margin: 35px 0 40px 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  &__subtitle{
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  &__item-min {
+    position: relative;
+    padding-left: 27px;
+    padding-bottom: 12px;
+    font-size: 15px;
+    line-height: 22px;
+    &::before{
+      content: '';
+      position: absolute;
+      background: url('../images/icon/arrow-list.svg');
+      background-repeat: no-repeat;
+      width: 7px;
+      height: 12px;
+      left: 0;
+      bottom: 18px;
+    }
   }
 }
 

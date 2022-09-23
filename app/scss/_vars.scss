@@ -44,6 +44,7 @@ $bg: #FFFBF7;
   border: none;
   background: linear-gradient(180deg, #F39C32 0%, #CB8734 100%);
   color: #fff;
+  cursor: pointer;
 }
 
 @function max($numbers...) {
