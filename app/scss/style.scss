@@ -208,101 +208,102 @@
   &__slider {
     width: 615px;
     position: relative;
-    // overflow: hidden;
     display: flex;
   }
-}
 
-.slick-arrow {
-  border: none;
-  background: transparent;
-  position: absolute;
-  bottom: 50px;
-  right: 0;
-  cursor: pointer;
-}
+  .slick-arrow {
+    border: none;
+    background: transparent;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    cursor: pointer;
+  }
 
-.slick-prev {
-  right: 104px;
-  z-index: 2;
-}
+  .slick-prev {
+    right: 106px;
+    z-index: 2;
+  }
 
-.slick-next {
-  right: 40px;
-}
+  .slick-next {
+    right: 40px;
+  }
 
-.slick-list {
-  position: relative;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  height: 470px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+  .slick-list {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-.slick-slide {
-  float: left;
-  margin: 0 10px;
-  cursor: pointer;
-}
+  .slick-slide {
+    float: left;
+    margin: 0 10px;
+    cursor: pointer;
+  }
 
-.slick-dots {
-  position: absolute;
-  bottom: 55px;
-  display: flex;
-  right: 70px;
+  .slick-dots {
+    position: absolute;
+    bottom: 55px;
+    display: flex;
+    right: 70px;
 
-  li {
-    button {
-      font-size: 0;
-      line-height: 0;
-      border: transparent;
-      background: transparent;
-      color: transparent;
-      display: none;
-    }
-
-    &:nth-child(5) {
+    li {
       button {
+        font-size: 0;
+        line-height: 0;
+        border: transparent;
+        background: transparent;
+        color: transparent;
+        display: none;
+      }
+
+      &:nth-child(5) {
+        button {
+          font-size: 16px;
+          line-height: 16px;
+          color: #fff;
+          display: block;
+        }
+      }
+
+      &:nth-child(5)::before {
+        content: '/';
+        position: absolute;
+        bottom: 0;
+        right: 15px;
         font-size: 16px;
         line-height: 16px;
         color: #fff;
-        display: block;
       }
-    }
 
-    &:nth-child(5)::before {
-      content: '/';
-      position: absolute;
-      bottom: 0;
-      right: 15px;
-      font-size: 16px;
-      line-height: 16px;
-      color: #fff;
-    }
+      &.slick-active {
+        button {
+          font-size: 16px;
+          line-height: 16px;
+          color: #fff;
+          display: block;
+        }
+      }
 
-    &.slick-active {
-      button {
+      &:nth-child(5).slick-active::after {
+        content: '5';
+        position: absolute;
         font-size: 16px;
         line-height: 16px;
         color: #fff;
-        display: block;
+        bottom: 1px;
+        right: 25px;
       }
-    }
-
-    &:nth-child(5).slick-active::after {
-      content: '5';
-      position: absolute;
-      font-size: 16px;
-      line-height: 16px;
-      color: #fff;
-      bottom: 1px;
-      right: 25px;
     }
   }
 }
+
+
 
 .header-detailed {
   margin-top: -110px;
@@ -805,10 +806,12 @@
   font-size: 14px;
   line-height: 22px;
   background: #FFFBF7;
-  .header-menu{
+
+  .header-menu {
     margin-top: 90px;
     margin-bottom: 50px;
   }
+
   .header-info {
     align-items: center;
     width: 493px;
@@ -819,14 +822,18 @@
     @extend %btn;
     padding: 14px 25px;
   }
-  &__list:nth-child(4){
+
+  &__list:nth-child(4) {
     width: 500px;
-    .footer__item:nth-child(1){
+
+    .footer__item:nth-child(1) {
       display: flex;
-      .logo{
+
+      .logo {
         width: 238px;
       }
-      .header-top__subtitle{
+
+      .header-top__subtitle {
         width: 235px;
         font-size: 13px;
         line-height: 18px;
@@ -834,40 +841,49 @@
       }
     }
   }
+
   &__inner {
     display: flex;
     justify-content: space-between;
-    
-  } 
-  &__list:nth-child(4){
-    .footer__item{
+
+  }
+
+  &__list:nth-child(4) {
+    .footer__item {
       padding-bottom: 0;
     }
   }
+
   &__item {
     padding-bottom: 15px;
-    .header-top__text{
+
+    .header-top__text {
       @extend %gilroy-600;
       line-height: 18px;
       margin-bottom: 10px;
     }
   }
-  &__social{
+
+  &__social {
     margin-top: 60px;
   }
-  &__num{
+
+  &__num {
     margin-top: 45px;
   }
+
   &__link {
     color: $default;
   }
-  &__line{
+
+  &__line {
     height: 1px;
     width: 100%;
     background: #E7D8C7;
     margin-bottom: 30px;
   }
-  &__copy{
+
+  &__copy {
     text-align: center;
     margin-bottom: 30px;
     font-size: 13px;
@@ -881,13 +897,16 @@
 
 .structure {
   background: #FFFBF7;
-  &__inner{
+
+  &__inner {
     padding: 145px 0;
 
   }
+
   &__title {
     margin-bottom: 40px;
   }
+
   &__list {
     display: flex;
     justify-content: space-between;
@@ -913,18 +932,21 @@
     text-align: left;
   }
 
-  &__subtitle{
+  &__subtitle {
     font-size: 30px;
     line-height: 30px;
     margin-bottom: 15px;
+    color: $default;
   }
+
   &__item-min {
     position: relative;
     padding-left: 27px;
     padding-bottom: 12px;
     font-size: 15px;
     line-height: 22px;
-    &::before{
+
+    &::before {
       content: '';
       position: absolute;
       background: url('../images/icon/arrow-list.svg');
@@ -934,6 +956,284 @@
       left: 0;
       bottom: 18px;
     }
+  }
+}
+
+.blog-one {
+  &__inner {
+    margin: 145px 0;
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 40px;
+  }
+
+  &__slider {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    .slick-arrow {
+      border: none;
+      background: transparent;
+      position: absolute;
+      top: -57px;
+      cursor: pointer;
+    }
+
+    .slick-prev {
+      right: 70px;
+      z-index: 2;
+    }
+
+    .slick-next {
+      right: 0px;
+    }
+
+    .slick-list {
+      position: relative;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .slick-slide {
+      float: left;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+
+    .slick-dots {
+      position: absolute;
+      display: flex;
+      top: -50px;
+      right: 30px;
+
+      li {
+        button {
+          font-size: 0;
+          line-height: 0;
+          border: transparent;
+          background: transparent;
+          color: transparent;
+          display: none;
+        }
+
+        &:nth-child(5) {
+          button {
+            font-size: 16px;
+            line-height: 16px;
+            color: #CB8734;
+            ;
+            display: block;
+          }
+        }
+
+        &:nth-child(5)::before {
+          content: '/';
+          position: absolute;
+          bottom: 0;
+          right: 15px;
+          font-size: 16px;
+          line-height: 16px;
+          color: #CB8734;
+          ;
+        }
+
+        &.slick-active {
+          button {
+            font-size: 16px;
+            line-height: 16px;
+            color: #CB8734;
+            ;
+            display: block;
+          }
+        }
+
+        &:nth-child(5).slick-active::after {
+          content: '5';
+          position: absolute;
+          font-size: 16px;
+          line-height: 16px;
+          color: #CB8734;
+          ;
+          bottom: 1px;
+          right: 25px;
+        }
+      }
+    }
+  }
+
+  &__box {
+    position: relative;
+  }
+
+  &__img {
+    border-radius: 0px 36px;
+    margin-bottom: 25px;
+  }
+
+  &__span {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 11px;
+    line-height: 12px;
+    @extend %gilroy-700;
+    padding: 11px 20px;
+    background: #CB8734;
+    border-radius: 4px;
+    color: #fff;
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    line-height: 30px;
+    color: $default;
+    @extend %gilroy-400;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 30px;
+    @extend %gilroy-300;
+  }
+}
+
+
+
+.ceo {
+  &__clider {
+    .slick-arrow {
+      border: none;
+      background: transparent;
+      position: absolute;
+      bottom: 6%;;
+      cursor: pointer;
+    }
+
+    .slick-prev {
+      right: 263px;
+      z-index: 2;
+    }
+
+    .slick-next {
+      right: 203px;
+    }
+
+    .slick-list {
+      position: relative;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 1170px;
+    }
+
+    .slick-slide {
+      float: left;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+
+    .slick-dots {
+      position: absolute;
+      display: flex;
+      bottom: 35px;
+      right: 20%;
+
+      li {
+        button {
+          font-size: 0;
+          line-height: 0;
+          border: transparent;
+          background: transparent;
+          color: transparent;
+          display: none;
+        }
+
+        &:nth-child(5) {
+          button {
+            font-size: 16px;
+            line-height: 16px;
+            color: #fff;
+            ;
+            display: block;
+          }
+        }
+
+        &:nth-child(5)::before {
+          content: '/';
+          position: absolute;
+          bottom: 0;
+          right: 15px;
+          font-size: 16px;
+          line-height: 16px;
+          color: #fff;
+          ;
+        }
+
+        &.slick-active {
+          button {
+            font-size: 16px;
+            line-height: 16px;
+            color: #fff;
+            ;
+            display: block;
+          }
+        }
+
+        &:nth-child(5).slick-active::after {
+          content: '5';
+          position: absolute;
+          font-size: 16px;
+          line-height: 16px;
+          color: #fff;
+          ;
+          bottom: 1px;
+          right: 25px;
+        }
+      }
+    }
+  }
+  &__items{
+
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title {
+    line-height: 48px;
+    margin-bottom: 12px;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 30px;
+    @extend %gilroy-300;
+    width: 535px;
+    margin-bottom: 20px;
+  }
+
+  &__img {
+    border-radius: 0px 100px;
   }
 }
 
