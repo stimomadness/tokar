@@ -35,44 +35,29 @@ body {
 }
 
 .breadcrumbs {
+  margin-top: 20px;
   display: inline-flex;
-  justify-content: center;
-  padding-left: 25px;
+  justify-content: flex-start;
   position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    background-image: url('../images/icons/home-icon.svg');
-    width: 16px;
-    height: 16px;
-    left: 0;
-    top: 4px;
-  }
-
+  max-width: 100%;
   &__list {
     display: flex;
   }
-
   &__item {
-    color: #727272;
-    padding-right: 40px;
+    color: #828282;
+    padding-right: 30px;
     position: relative;
-
     &::after {
-      content: "";
+      content: "/";
       position: absolute;
-      background-image: url('../images/icons/angle-right.svg');
-      width: 9px;
-      height: 10px;
-      right: 15px;
-      top: 9px;
+      right: 10px;
+      top: 6px;
+      font-size: 18px;
+      line-height: 17px;
+      color: #828282;
     }
-
     &:last-child {
-      color: $accent;
       padding-right: 0;
-
       &::after {
         display: none;
       }

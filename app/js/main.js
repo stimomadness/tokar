@@ -31,3 +31,19 @@ $('.ceo__clider').slick({
 
 
 });
+
+
+$('.select-style, .product-one__item-num').styler();
+
+$('.filter-price__input').ionRangeSlider({
+  type: "double",
+  prefix: "",
+  onStart: function (data) {
+    $('.filter-price__from').text(data.from);
+    $('.filter-price__to').text(data.to);
+  },
+  onChange: function (data) {
+    $('.filter-price__from').text(data.from);
+    $('.filter-price__to').text(data.to);
+  },
+});
