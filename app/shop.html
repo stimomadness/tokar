@@ -141,21 +141,50 @@
           </form>
         </div>
         <div class="shop__box">
-
           <div class="shop-aside">
             <div class="shop__filters filter">
-              <div class="filter__item filter-price">
-                <h3 class="filter__title">Price Filter</h3>
-                <form class="filter-price__form" action="#">
-                  <input class="filter-price__input" type="text" data-min="100000" data-max="5000000" 
-                    data-to="800">
-                  <label class="filter-price__label">
-                    <span>
-                      <span class="filter-price__from"></span> -
-                      <span class="filter-price__to"></span>
-                    </span>
-                  </label>
-                </form>
+              <div class="accordion">
+                <div class="accordion__item">
+                  <div class="accordion__item-trigger">
+                    <div class="trigger__num">
+                      <div class="filter__title-box">
+                        <h3 class="filter__title">
+                          Площадь (м <span>2</span>):
+                        </h3>
+                      </div>
+                    </div>
+                    <img class="trigger__img" src="images/icon/angle-top-bottom.svg" alt="angle images">
+                  </div>
+                  <div class="accordion__item-content">
+                    <div class="content__text">
+                      <form class="filter-metr__form" action="#">
+                        <input class="filter-metr__input" type="text" data-type="double" data-min="10" data-max="500"
+                          data-to="268">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion__item">
+                  <div class="accordion__item-trigger">
+                    <div class="trigger__num">
+                      <div class="filter__title-box">
+                        <h3 class="filter__title">
+                          Цена (руб):
+                        </h3>
+                      </div>
+                    </div>
+                    <img class="trigger__img" src="images/icon/angle-top-bottom.svg" alt="angle images">
+                  </div>
+                  <div class="accordion__item-content">
+                    <div class="content__text">
+                      <form class="filter-price__form" action="#">
+                        <input class="filter-price__input" type="text" data-type="double" data-min="100000"
+                          data-max="5000000" data-to="2680000" data-prettify="true">
+                      </form>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -496,7 +525,390 @@
                 </p>
               </div>
             </div>
+            <div class="shop-catalogy__item">
+              <img class="shop-catalogy__img" src="images/shop/1.jpg" alt="house image">
+              <h5 class="shop-catalogy__title">
+                Вариант Z-65 <br> «Bavaria»
+              </h5>
+              <div class="shop-catalogy__box">
+                <div class="shop-catalogy__box-num">
+                  <img class="shop-catalogy__img-num" src="images/icon/m.svg" alt="icon image">
+                  <p class="shop-catalogy__m">
+                    7,5х9 м
+                  </p>
+                </div>
+                <div class="shop-catalogy__box-num">
+                  <img class="shop-catalogy__img-num" src="images/icon/m2.svg" alt="icon image">
+                  <p class="shop-catalogy__m">
+                    135 м <span>2</span>
+                  </p>
+                </div>
+              </div>
+              <div class="shop-catalogy__info">
+                <a class="shop-catalogy__btn" href="#">
+                  Ознакомиться
+                </a>
+                <p class="shop-catalogy__num">
+                  1 000 000 руб
+                </p>
+              </div>
+            </div>
+            <div class="shop-catalogy__item">
+              <img class="shop-catalogy__img" src="images/shop/2.jpg" alt="house image">
+              <h5 class="shop-catalogy__title">
+                Вариант ST-56 <br> «Barcelona»
+              </h5>
+              <div class="shop-catalogy__box">
+                <div class="shop-catalogy__box-num">
+                  <img class="shop-catalogy__img-num" src="images/icon/m.svg" alt="icon image">
+                  <p class="shop-catalogy__m">
+                    7,5х9 м
+                  </p>
+                </div>
+                <div class="shop-catalogy__box-num">
+                  <img class="shop-catalogy__img-num" src="images/icon/m2.svg" alt="icon image">
+                  <p class="shop-catalogy__m">
+                    135 м <span>2</span>
+                  </p>
+                </div>
+              </div>
+              <div class="shop-catalogy__info">
+                <a class="shop-catalogy__btn" href="#">
+                  Ознакомиться
+                </a>
+                <p class="shop-catalogy__num">
+                  2 800 000 руб
+                </p>
+              </div>
+            </div>
+            <div class="shop-catalogy__item">
+              <img class="shop-catalogy__img" src="images/shop/3.jpg" alt="house image">
+              <h5 class="shop-catalogy__title">
+                Вариант ST-25 <br> «Garden ECO»
+              </h5>
+              <div class="shop-catalogy__box">
+                <div class="shop-catalogy__box-num">
+                  <img class="shop-catalogy__img-num" src="images/icon/m.svg" alt="icon image">
+                  <p class="shop-catalogy__m">
+                    7,5х9 м
+                  </p>
+                </div>
+                <div class="shop-catalogy__box-num">
+                  <img class="shop-catalogy__img-num" src="images/icon/m2.svg" alt="icon image">
+                  <p class="shop-catalogy__m">
+                    135 м <span>2</span>
+                  </p>
+                </div>
+              </div>
+              <div class="shop-catalogy__info">
+                <a class="shop-catalogy__btn" href="#">
+                  Ознакомиться
+                </a>
+                <p class="shop-catalogy__num">
+                  580 000 руб
+                </p>
+              </div>
+            </div>
+            <div class="shop-catalogy__item">
+              <img class="shop-catalogy__img" src="images/shop/4.jpg" alt="house image">
+              <h5 class="shop-catalogy__title">
+                Вариант ST-53 <br> «Feeria»
+              </h5>
+              <div class="shop-catalogy__box">
+                <div class="shop-catalogy__box-num">
+                  <img class="shop-catalogy__img-num" src="images/icon/m.svg" alt="icon image">
+                  <p class="shop-catalogy__m">
+                    7,5х9 м
+                  </p>
+                </div>
+                <div class="shop-catalogy__box-num">
+                  <img class="shop-catalogy__img-num" src="images/icon/m2.svg" alt="icon image">
+                  <p class="shop-catalogy__m">
+                    135 м <span>2</span>
+                  </p>
+                </div>
+              </div>
+              <div class="shop-catalogy__info">
+                <a class="shop-catalogy__btn" href="#">
+                  Ознакомиться
+                </a>
+                <p class="shop-catalogy__num">
+                  980 000 руб
+                </p>
+              </div>
+            </div>
+            <div class="shop-catalogy__item">
+              <img class="shop-catalogy__img" src="images/shop/5.jpg" alt="house image">
+              <h5 class="shop-catalogy__title">
+                Вариант LX-75 <br> «JULIA»
+              </h5>
+              <div class="shop-catalogy__box">
+                <div class="shop-catalogy__box-num">
+                  <img class="shop-catalogy__img-num" src="images/icon/m.svg" alt="icon image">
+                  <p class="shop-catalogy__m">
+                    7,5х9 м
+                  </p>
+                </div>
+                <div class="shop-catalogy__box-num">
+                  <img class="shop-catalogy__img-num" src="images/icon/m2.svg" alt="icon image">
+                  <p class="shop-catalogy__m">
+                    135 м <span>2</span>
+                  </p>
+                </div>
+              </div>
+              <div class="shop-catalogy__info">
+                <a class="shop-catalogy__btn" href="#">
+                  Ознакомиться
+                </a>
+                <p class="shop-catalogy__num">
+                  2 350 000 руб
+                </p>
+              </div>
+            </div>
+            <div class="shop-catalogy__item">
+              <img class="shop-catalogy__img" src="images/shop/6.jpg" alt="house image">
+              <h5 class="shop-catalogy__title">
+                Вариант ST-49v2 <br> «Nevada»
+              </h5>
+              <div class="shop-catalogy__box">
+                <div class="shop-catalogy__box-num">
+                  <img class="shop-catalogy__img-num" src="images/icon/m.svg" alt="icon image">
+                  <p class="shop-catalogy__m">
+                    7,5х9 м
+                  </p>
+                </div>
+                <div class="shop-catalogy__box-num">
+                  <img class="shop-catalogy__img-num" src="images/icon/m2.svg" alt="icon image">
+                  <p class="shop-catalogy__m">
+                    135 м <span>2</span>
+                  </p>
+                </div>
+              </div>
+              <div class="shop-catalogy__info">
+                <a class="shop-catalogy__btn" href="#">
+                  Ознакомиться
+                </a>
+                <p class="shop-catalogy__num">
+                  2 421 000 руб
+                </p>
+              </div>
+            </div>
+            <div class="shop-catalogy__item">
+              <img class="shop-catalogy__img" src="images/shop/7.jpg" alt="house image">
+              <h5 class="shop-catalogy__title">
+                Вариант OS-77 <br> «Milano»
+              </h5>
+              <div class="shop-catalogy__box">
+                <div class="shop-catalogy__box-num">
+                  <img class="shop-catalogy__img-num" src="images/icon/m.svg" alt="icon image">
+                  <p class="shop-catalogy__m">
+                    7,5х9 м
+                  </p>
+                </div>
+                <div class="shop-catalogy__box-num">
+                  <img class="shop-catalogy__img-num" src="images/icon/m2.svg" alt="icon image">
+                  <p class="shop-catalogy__m">
+                    135 м <span>2</span>
+                  </p>
+                </div>
+              </div>
+              <div class="shop-catalogy__info">
+                <a class="shop-catalogy__btn" href="#">
+                  Ознакомиться
+                </a>
+                <p class="shop-catalogy__num">
+                  3 260 000 руб
+                </p>
+              </div>
+            </div>
+            <div class="shop-catalogy__item">
+              <img class="shop-catalogy__img" src="images/shop/8.jpg" alt="house image">
+              <h5 class="shop-catalogy__title">
+                Вариант ST-22 <br> «Classic»
+              </h5>
+              <div class="shop-catalogy__box">
+                <div class="shop-catalogy__box-num">
+                  <img class="shop-catalogy__img-num" src="images/icon/m.svg" alt="icon image">
+                  <p class="shop-catalogy__m">
+                    7,5х9 м
+                  </p>
+                </div>
+                <div class="shop-catalogy__box-num">
+                  <img class="shop-catalogy__img-num" src="images/icon/m2.svg" alt="icon image">
+                  <p class="shop-catalogy__m">
+                    135 м <span>2</span>
+                  </p>
+                </div>
+              </div>
+              <div class="shop-catalogy__info">
+                <a class="shop-catalogy__btn" href="#">
+                  Ознакомиться
+                </a>
+                <p class="shop-catalogy__num">
+                  1 200 000 руб
+                </p>
+              </div>
+            </div>
+            <div class="shop-catalogy__item">
+              <img class="shop-catalogy__img" src="images/shop/9.jpg" alt="house image">
+              <h5 class="shop-catalogy__title">
+                Вариант ST-65 <br> «Elegant»
+              </h5>
+              <div class="shop-catalogy__box">
+                <div class="shop-catalogy__box-num">
+                  <img class="shop-catalogy__img-num" src="images/icon/m.svg" alt="icon image">
+                  <p class="shop-catalogy__m">
+                    7,5х9 м
+                  </p>
+                </div>
+                <div class="shop-catalogy__box-num">
+                  <img class="shop-catalogy__img-num" src="images/icon/m2.svg" alt="icon image">
+                  <p class="shop-catalogy__m">
+                    135 м <span>2</span>
+                  </p>
+                </div>
+              </div>
+              <div class="shop-catalogy__info">
+                <a class="shop-catalogy__btn" href="#">
+                  Ознакомиться
+                </a>
+                <p class="shop-catalogy__num">
+                  2 300 000 руб
+                </p>
+              </div>
+            </div>
+            <div class="shop-catalogy__item">
+              <img class="shop-catalogy__img" src="images/shop/10.jpg" alt="house image">
+              <h5 class="shop-catalogy__title">
+                Вариант ST-16 <br> ««Classic Plus»
+              </h5>
+              <div class="shop-catalogy__box">
+                <div class="shop-catalogy__box-num">
+                  <img class="shop-catalogy__img-num" src="images/icon/m.svg" alt="icon image">
+                  <p class="shop-catalogy__m">
+                    7,5х9 м
+                  </p>
+                </div>
+                <div class="shop-catalogy__box-num">
+                  <img class="shop-catalogy__img-num" src="images/icon/m2.svg" alt="icon image">
+                  <p class="shop-catalogy__m">
+                    135 м <span>2</span>
+                  </p>
+                </div>
+              </div>
+              <div class="shop-catalogy__info">
+                <a class="shop-catalogy__btn" href="#">
+                  Ознакомиться
+                </a>
+                <p class="shop-catalogy__num">
+                  920 000 руб
+                </p>
+              </div>
+            </div>
+            <div class="shop-catalogy__item">
+              <img class="shop-catalogy__img" src="images/shop/11.jpg" alt="house image">
+              <h5 class="shop-catalogy__title">
+                Вариант ST-23 <br> «ECO Soul»
+              </h5>
+              <div class="shop-catalogy__box">
+                <div class="shop-catalogy__box-num">
+                  <img class="shop-catalogy__img-num" src="images/icon/m.svg" alt="icon image">
+                  <p class="shop-catalogy__m">
+                    7,5х9 м
+                  </p>
+                </div>
+                <div class="shop-catalogy__box-num">
+                  <img class="shop-catalogy__img-num" src="images/icon/m2.svg" alt="icon image">
+                  <p class="shop-catalogy__m">
+                    135 м <span>2</span>
+                  </p>
+                </div>
+              </div>
+              <div class="shop-catalogy__info">
+                <a class="shop-catalogy__btn" href="#">
+                  Ознакомиться
+                </a>
+                <p class="shop-catalogy__num">
+                  2 150 000 руб
+                </p>
+              </div>
+            </div>
+            <div class="shop-catalogy__item">
+              <img class="shop-catalogy__img" src="images/shop/12.jpg" alt="house image">
+              <h5 class="shop-catalogy__title">
+                Вариант ST-99 <br> «Edinburgh»
+              </h5>
+              <div class="shop-catalogy__box">
+                <div class="shop-catalogy__box-num">
+                  <img class="shop-catalogy__img-num" src="images/icon/m.svg" alt="icon image">
+                  <p class="shop-catalogy__m">
+                    7,5х9 м
+                  </p>
+                </div>
+                <div class="shop-catalogy__box-num">
+                  <img class="shop-catalogy__img-num" src="images/icon/m2.svg" alt="icon image">
+                  <p class="shop-catalogy__m">
+                    135 м <span>2</span>
+                  </p>
+                </div>
+              </div>
+              <div class="shop-catalogy__info">
+                <a class="shop-catalogy__btn" href="#">
+                  Ознакомиться
+                </a>
+                <p class="shop-catalogy__num">
+                  2 458 000 руб
+                </p>
+              </div>
+            </div>
+                        <div class="shop-catalogy__item">
+              <img class="shop-catalogy__img" src="images/shop/11.jpg" alt="house image">
+              <h5 class="shop-catalogy__title">
+                Вариант ST-23 <br> «ECO Soul»
+              </h5>
+              <div class="shop-catalogy__box">
+                <div class="shop-catalogy__box-num">
+                  <img class="shop-catalogy__img-num" src="images/icon/m.svg" alt="icon image">
+                  <p class="shop-catalogy__m">
+                    7,5х9 м
+                  </p>
+                </div>
+                <div class="shop-catalogy__box-num">
+                  <img class="shop-catalogy__img-num" src="images/icon/m2.svg" alt="icon image">
+                  <p class="shop-catalogy__m">
+                    135 м <span>2</span>
+                  </p>
+                </div>
+              </div>
+              <div class="shop-catalogy__info">
+                <a class="shop-catalogy__btn" href="#">
+                  Ознакомиться
+                </a>
+                <p class="shop-catalogy__num">
+                  2 150 000 руб
+                </p>
+              </div>
+            </div>
           </div>
+        </div>
+        <div class="shop-info">
+          <div class="shop-info__project">
+            <div class="shop-info__box">
+              <h4 class="shop-info__title">
+                Нет подходящего проекта?
+              </h4>
+              <p class="shop-info__text">
+                Мы разработаем проект индивидуально под ваш запрос с помощью 3D-макета
+              </p>
+              <a class="shop-info__link" href="#">
+                Разработать проект
+              </a>
+            </div>
+            <img class="shop-info__img" src="images/info/6.jpg" alt="human image">
+          </div>
+          <button class="shop-catalogy__btn-press">
+            Показать ещё больше
+          </button>
         </div>
       </div>
     </section>

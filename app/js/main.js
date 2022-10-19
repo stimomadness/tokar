@@ -1,5 +1,5 @@
-$(function (){
-  
+$(function () {
+
 });
 
 $('.header-inner__slider').slick({
@@ -36,14 +36,56 @@ $('.ceo__clider').slick({
 $('.select-style, .product-one__item-num').styler();
 
 $('.filter-price__input').ionRangeSlider({
-  type: "double",
-  prefix: "",
-  onStart: function (data) {
-    $('.filter-price__from').text(data.from);
-    $('.filter-price__to').text(data.to);
-  },
-  onChange: function (data) {
-    $('.filter-price__from').text(data.from);
-    $('.filter-price__to').text(data.to);
-  },
 });
+$('.filter-metr__input').ionRangeSlider({
+});
+
+
+
+
+
+
+
+
+function accordion() {
+  const items = document.querySelectorAll('.accordion__item-trigger')
+  items.forEach(item => {
+    item.addEventListener('click', () => {
+      const parent = item.parentNode
+      if (parent.classList.contains('accordion__item-active')) {
+        parent.classList.remove('accordion__item-active')
+      }
+       else {
+        document
+          .querySelectorAll('.accordion__item')
+          .forEach(child => child.classList.remove('accordion__item-active'))
+        parent.classList.add('accordion__item-active')
+      }
+    })
+  })
+}
+accordion() 
+
+
+
+$(document).ready(function () {
+  var list = $(".shop-catalogy .shop-catalogy__item");
+  var numToShow = 12; //сколько показывать элементов
+  var button = $("button");
+  var numInList = list.length;
+  list.hide();
+  if (numInList > numToShow) {
+    button.show();
+  }
+  list.slice(0, numToShow).show();
+  button.click(function () {
+    var showing = list.filter(':visible').length;
+    list.slice(showing - 1, showing + numToShow).fadeIn();
+    var nowShowing = list.filter(':visible').length;
+    if (nowShowing >= numInList) {
+      button.hide();
+    }
+  });
+});
+
+
