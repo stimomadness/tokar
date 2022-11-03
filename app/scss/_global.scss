@@ -2,6 +2,7 @@ html,
 body {
   height: 100%;
 }
+
 body {
   color: $default;
   font-size: 18px;
@@ -16,18 +17,19 @@ body {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-.title{
+.title {
   @extend %gilroy-700;
-  line-height: 58px;  
+  line-height: 58px;
   font-size: 36px;
   color: $default;
 }
-.subtitle{
+
+.subtitle {
   @extend %gilroy-400;
   color: $default;
   font-size: 30px;
@@ -40,13 +42,16 @@ body {
   justify-content: flex-start;
   position: relative;
   max-width: 100%;
+
   &__list {
     display: flex;
   }
+
   &__item {
     color: #828282;
     padding-right: 30px;
     position: relative;
+
     &::after {
       content: "/";
       position: absolute;
@@ -56,8 +61,10 @@ body {
       line-height: 17px;
       color: #828282;
     }
+
     &:last-child {
       padding-right: 0;
+
       &::after {
         display: none;
       }
@@ -68,4 +75,3 @@ body {
     color: inherit;
   }
 }
-
