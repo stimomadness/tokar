@@ -1945,6 +1945,9 @@
 .card-info {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 300px;
 
   &__price {
     width: 370px;
@@ -1956,6 +1959,8 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    position: absolute;
+    transform: translateY(70px);
   }
 
   &__num {
@@ -1980,13 +1985,118 @@
 }
 
 .card-callback {
+  position: absolute;
+  right: 0px;
+  top: 45px;
+
   &__form {}
 
-  &__input {}
+  &__text {
+    font-size: 30px;
+    line-height: 36px;
+    @extend %gilroy-400;
 
-  &__btn {}
+  }
+
+  &__input {
+    width: 440px;
+    height: 58px;
+    margin-top: 25px;
+    font-size: 14px;
+    line-height: 17px;
+    @extend %gilroy-400;
+    padding-left: 80px;
+    border: 1px solid #E7D8C7;
+    border-radius: 4px;
+    margin-right: 15px;
+  }
+
+  &__btn {
+    @extend %btn;
+    padding: 20px 100px;
+    @extend %gilroy-700;
+  }
 }
 
+
+.feature-card {
+  &__info {
+    box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
+    border-radius: 8px;
+    padding: 40px 0 52px 60px;
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 58px;
+    @extend %gilroy-700;
+  }
+
+  &__box {
+    display: flex;
+  }
+
+  &__items {
+    &:nth-child(1) {
+      width: 413px;
+    }
+
+    &:nth-child(2) {
+      display: flex;
+    }
+  }
+
+  &__item {}
+
+  &__info-m {
+    height: 85px;
+    border-top: 1px solid #E7D8C7;
+    border-bottom: 1px solid #E7D8C7;
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    object-fit: scale-down;
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 36px;
+    margin-left: 33px;
+    @extend %gilroy-400;
+  }
+
+  &__img-house {
+    width: 270px;
+    height: 180px;
+    border-radius: 0px 36px;
+  }
+
+  &__item-name {
+    @extend %gilroy-400;
+    font-size: 30px;
+    line-height: 36px;
+    margin-left: 30px;
+  }
+
+  &__min-list {
+    margin-top: 15px;
+    margin-left: 30px;
+  }
+
+  &__min-item {
+    padding-left: 35px;
+
+    span {
+      @extend %gilroy-700;
+    }
+  }
+
+  &__min-box {}
+
+  &__min-text {}
+}
 
 
 
