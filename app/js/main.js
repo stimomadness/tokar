@@ -1,4 +1,4 @@
-// 'use strict'
+'use strict'
 
 
 // function filterFunction() {
@@ -93,4 +93,13 @@ $('.card-one__thumb').slick({
   focusOnSelect: true,
   arrows: false,
   dots: false,
+});
+
+
+let catalogFiltersTop = document.querySelectorAll('.filter__title-box');
+
+catalogFiltersTop.forEach(el => {
+  el.addEventListener('click', (e) => {
+    e.currentTarget.closest('.catalog-filter').classList.toggle('catalog-filter--open');
+  });
 });

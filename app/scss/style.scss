@@ -1426,16 +1426,35 @@
   }
 }
 
-.acc {
-  &__item {
-    position: relative;
+.catalog-filter {
+  position: relative;
+  margin-bottom: 20px;
 
-    &:nth-of-type(3) {
-      margin-bottom: 60px;
+  &__bottom {
+    display: none;
+  }
+
+  &--open {
+    .catalog-filter__bottom {
+      display: block;
+    }
+
+    .filter {
+      &__title-box {
+        img {
+          transition: .2s;
+          transform: rotateX(0deg);
+        }
+      }
     }
   }
 
   &__box-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__list {
     margin-bottom: 30px;
   }
 
@@ -1496,7 +1515,6 @@
     justify-content: center;
   }
 
-  &__link-item:hover {}
 
   &__list-filter {
     cursor: pointer;
@@ -1506,13 +1524,13 @@
         position: absolute;
         content: '';
         background-image: url('../images/icon/arrow-up.svg');
-        right: 0;
+        right: 13px;
         top: 4px;
         width: 8px;
         height: 13px;
       }
 
-      .acc__link-item {
+      .catalog-filter__link-item {
         color: $accent;
         @extend %gilroy-700;
       }
@@ -1523,12 +1541,20 @@
 .filter {
   &__title-box {
     position: relative;
+    cursor: pointer;
 
     img {
       position: absolute;
       right: 15px;
+      transform: rotateX(180deg);
     }
   }
+
+
+}
+
+.filter-metr__form {
+  margin-bottom: 60px;
 }
 
 .shop-info {
@@ -2248,6 +2274,65 @@
 
 
 
+.process {
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+
+    .process__item:first-child {
+      width: 266px;
+      box-shadow: none;
+      border-radius: 0px 0px 0px 0px;
+    }
+
+  }
+
+  &__item {
+    width: 270px;
+    height: 240px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
+    border-radius: 0px 40px 0px 0px;
+    padding-left: 28px;
+  }
+
+  &__subtitle-box {
+    padding-left: 0;
+    margin-top: 30px;
+
+    .process__subtitle {
+      font-weight: 700;
+      line-height: 30px;
+      margin-bottom: 20px;
+
+      &:nth-child(2n) {
+        margin-left: 17px;
+      }
+
+      span {
+        padding: 15px 158px 15px 17px;
+        color: #fff;
+        clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0% 100%, 0 50%, 0% 0%);
+        background: $accent;
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__img {
+    margin-top: 30px;
+  }
+
+  &__text {
+    margin-top: 24px;
+    width: 225px;
+  }
+}
 
 
 @import "media";
