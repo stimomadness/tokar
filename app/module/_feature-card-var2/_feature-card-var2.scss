@@ -1,0 +1,130 @@
+.feature-card {
+  &__info {
+    box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
+    border-radius: 8px;
+    padding: 40px 0 52px 60px;
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 58px;
+    @extend %gilroy-700;
+  }
+
+  &__box {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column-reverse;
+  }
+
+  &__item-big {}
+
+  &__items-one {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__items-two {
+    display: flex;
+  }
+
+  &__info-m {
+    height: 102px;
+    margin-top: 40px;
+    border-right: 1px solid #E7D8C7;
+    border-left: 1px solid #E7D8C7;
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    object-fit: scale-down;
+    margin-left: 44px;
+  }
+
+  &__text {
+    width: 144px;
+    margin-right: 74px;
+    font-size: 24px;
+    line-height: 36px;
+    margin-left: 33px;
+    @extend %gilroy-400;
+  }
+
+  &__img-house {
+    width: 270px;
+    height: 180px;
+    border-radius: 0px 36px;
+  }
+
+  &__item-name {
+    @extend %gilroy-400;
+    font-size: 30px;
+    line-height: 36px;
+    margin-left: 50px;
+  }
+
+  &__box-min {
+    display: flex;
+    width: 620px;
+    justify-content: space-between;
+    margin: 15px 0 0 50px;
+  }
+
+  &__min-list {}
+
+  &__min-item {
+    padding-left: 35px;
+    position: relative;
+
+    span {
+      @extend %gilroy-700;
+
+    }
+  }
+
+  &__min-img1::before {
+    content: '';
+    position: absolute;
+    background-image: url('../images/icon/info-icon1.svg');
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 21px;
+    left: 0;
+  }
+
+  &__min-img2::before {
+    content: '';
+    position: absolute;
+    background-image: url('../images/icon/info-icon2.svg');
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    left: 0;
+  }
+
+  &__min-box {
+    height: 138px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+  }
+
+  &__min-text {
+    padding-left: 20px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url('../images/icon/angle-right.svg');
+      background-repeat: no-repeat;
+      left: 0;
+      width: 10px;
+      height: 13px;
+      top: 4px;
+
+    }
+  }
+}

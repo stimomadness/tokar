@@ -1,0 +1,341 @@
+.header-top {
+  margin-top: 40px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  &__item {
+    @extend %gilroy-600;
+
+    &:nth-child(4) {
+      text-align: right;
+    }
+
+    &:nth-child(5) {
+      text-align: center;
+
+      .header-top__btn {
+        @extend %gilroy-700;
+      }
+
+      .header-top__text {
+        font-size: 11px;
+        line-height: 18px;
+        @extend %gilroy-400;
+      }
+    }
+  }
+
+  &__box {
+    display: flex;
+
+    .header-top__link {
+      margin: 0 2px;
+
+      &:first-child {
+        margin: 0 2px 0 0;
+      }
+    }
+  }
+
+  &__link {
+    font-size: 20px;
+    line-height: 16px;
+    @extend %gilroy-700;
+    color: $default;
+  }
+
+  &__text {
+    span {
+      @extend %gilroy-400;
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    .header-top__text {
+      margin-top: 10px;
+    }
+  }
+
+  &__btn {
+    @extend %btn;
+    color: #fff;
+    padding: 14px 25px;
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 5px;
+  }
+
+  &__subtitle {
+    width: 255px;
+    letter-spacing: 0.08em;
+    @extend %gilroy-600;
+  }
+}
+
+.header-menu {
+  margin-top: 35px;
+  font-size: 16px;
+  line-height: 146.19%;
+  letter-spacing: 0.08em;
+  @extend %gilroy-700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__list {
+    width: 620px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #3d1e19;
+    box-shadow: 0px 0px 20px rgba(43, 42, 40, 0.2);
+    border-radius: 8px;
+  }
+
+  &__item {
+    padding: 25px 0;
+
+    &:nth-child(2) {
+      padding: 10px 50px;
+      border-right: 1px dashed rgba(229, 235, 242, 0.4);
+      border-left: 1px dashed rgba(229, 235, 242, 0.4);
+    }
+  }
+
+  &__link {
+    color: #fff;
+    transition: 0.5s;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+.header-info {
+  display: flex;
+  justify-content: space-between;
+  width: 430px;
+
+  &__link {
+    color: $default;
+    transition: 0.5s;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+.header-inner {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 410px;
+  }
+
+  &__title {
+    @extend %gilroy-800;
+    font-size: 38px;
+    line-height: 50px;
+    width: 560px;
+  }
+
+  &__text {
+    margin-top: 10px;
+    width: 500px;
+  }
+
+  &__links {
+    margin-top: 35px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__btn {
+    @extend %btn;
+    @extend %gilroy-700;
+    padding: 23px 41px;
+    color: #fff;
+  }
+
+  &__link {
+    padding-left: 86px;
+    @extend %gilroy-600;
+    font-size: 16px;
+    line-height: 16px;
+    color: $accent;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../images/icon/arrow.svg");
+      width: 30px;
+      height: 30px;
+      left: 44px;
+      top: -6px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__slider {
+    width: 615px;
+    position: relative;
+    display: flex;
+  }
+
+  .slick-arrow {
+    border: none;
+    background: transparent;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    cursor: pointer;
+  }
+
+  .slick-prev {
+    right: 106px;
+    z-index: 2;
+  }
+
+  .slick-next {
+    right: 40px;
+  }
+
+  .slick-list {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .slick-slide {
+    float: left;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+
+  .slick-dots {
+    position: absolute;
+    bottom: 55px;
+    display: flex;
+    right: 70px;
+
+    li {
+      button {
+        font-size: 0;
+        line-height: 0;
+        border: transparent;
+        background: transparent;
+        color: transparent;
+        display: none;
+      }
+
+      &:nth-child(5) {
+        button {
+          font-size: 16px;
+          line-height: 16px;
+          color: #fff;
+          display: block;
+        }
+      }
+
+      &:nth-child(5)::before {
+        content: "/";
+        position: absolute;
+        bottom: 0;
+        right: 15px;
+        font-size: 16px;
+        line-height: 16px;
+        color: #fff;
+      }
+
+      &.slick-active {
+        button {
+          font-size: 16px;
+          line-height: 16px;
+          color: #fff;
+          display: block;
+        }
+      }
+
+      &:nth-child(5).slick-active::after {
+        content: "5";
+        position: absolute;
+        font-size: 16px;
+        line-height: 16px;
+        color: #fff;
+        bottom: 1px;
+        right: 25px;
+      }
+    }
+  }
+}
+
+.header-detailed {
+  margin-top: -110px;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
+  border-radius: 8px;
+  transform: translateY(50%);
+  width: 1170px;
+
+  &__title {
+    @extend %gilroy-700;
+    line-height: 58px;
+    font-size: 36px;
+    margin-bottom: 35px;
+    margin-top: 55px;
+    margin: 55px 0 35px 40px;
+  }
+
+  ul.header-detailed__list {
+    padding: 0 30px 0 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0 32px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: start;
+    flex-direction: column;
+  }
+
+  &__img {
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    @extend %gilroy-700;
+  }
+
+  &__text {
+    @extend %gilroy-300;
+  }
+}

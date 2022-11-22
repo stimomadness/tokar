@@ -1,0 +1,134 @@
+.header-top {
+  margin-top: 40px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  &__item {
+    @extend %gilroy-600;
+
+    &:nth-child(4) {
+      text-align: right;
+    }
+
+    &:nth-child(5) {
+      text-align: center;
+
+      .header-top__btn {
+        @extend %gilroy-700;
+      }
+
+      .header-top__text {
+        font-size: 11px;
+        line-height: 18px;
+        @extend %gilroy-400;
+      }
+    }
+  }
+
+  &__box {
+    display: flex;
+
+    .header-top__link {
+      margin: 0 2px;
+
+      &:first-child {
+        margin: 0 2px 0 0;
+      }
+    }
+  }
+
+  &__link {
+    font-size: 20px;
+    line-height: 16px;
+    @extend %gilroy-700;
+    color: $default;
+  }
+
+  &__text {
+    span {
+      @extend %gilroy-400;
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    .header-top__text {
+      margin-top: 10px;
+    }
+  }
+
+  &__btn {
+    @extend %btn;
+    color: #fff;
+    padding: 14px 25px;
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 5px;
+  }
+
+  &__subtitle {
+    width: 255px;
+    letter-spacing: 0.08em;
+    @extend %gilroy-600;
+  }
+}
+
+.header-menu {
+  margin-top: 35px;
+  font-size: 16px;
+  line-height: 146.19%;
+  letter-spacing: 0.08em;
+  @extend %gilroy-700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__list {
+    width: 620px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #3d1e19;
+    box-shadow: 0px 0px 20px rgba(43, 42, 40, 0.2);
+    border-radius: 8px;
+  }
+
+  &__item {
+    padding: 25px 0;
+
+    &:nth-child(2) {
+      padding: 10px 50px;
+      border-right: 1px dashed rgba(229, 235, 242, 0.4);
+      border-left: 1px dashed rgba(229, 235, 242, 0.4);
+    }
+  }
+
+  &__link {
+    color: #fff;
+    transition: 0.5s;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+.header-info {
+  display: flex;
+  justify-content: space-between;
+  width: 430px;
+
+  &__link {
+    color: $default;
+    transition: 0.5s;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}
